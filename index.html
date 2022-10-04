@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Carousel Template · Bootstrap v5.2</title>
+<script src="https://kit.fontawesome.com/4d2eff668b.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+
+
+
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+
+    <section id="title">
+
+      <!-- Nav Bar -->
+      <div class="container-fluid">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand">Hospital Management System</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#section2"> About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prefrence
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#section1">New Appointment</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#section1">Manage Appointment</a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#footer1"> Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </nav>
+
+
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Experienced Doctors</h1>
+            <p>Highly qualified and Experienced Doctors.</p>
+            <p><a class="btn btn-lg btn-primary" href="#section1">Availabilty</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Best Counsultancy</h1>
+            <p>Patient can consult Doctors Efficiently.</p>
+            <p><a class="btn btn-lg btn-primary" href="#section1">Consult Now</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>24x7</h1>
+            <p>Doctors are Available 24*7 and Patients are given Priorities .</p>
+            <p><a class="btn btn-lg btn-primary" href="#footer1">Contact us</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing" id="section1">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+       <img class="pic" src="https://media.giphy.com/media/A3MR1JW7pfgKbcGZkM/giphy.gif" alt="Patient">
+
+        <h2 class="fw-normal">Patient</h2>
+        <p>Book your Appointment and get Consultant with Doctors.</p>
+        <button type="button" class="btn btn-outline-primary">Book Now</button>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+      <img class="pic1" src="https://media.giphy.com/media/OdSmRZy21FZ5GYoiua/giphy.gif" alt="Doctor">
+
+        <h2 class="fw-normal">Doctor</h2>
+        <p>Access your Appointments.</p>
+        <button type="button" class="btn btn-outline-primary">Login</button>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+      <img class="pic2" src="https://media.giphy.com/media/tW5U66JL0avuI3cFsy/giphy.gif" alt="To-Do">
+        <h2 class="fw-normal">Admin</h2>
+        <p>Manage Requests.</p>
+          <button type="button" class="btn btn-outline-primary">Login</button>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div> <!-- /.container -->
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider" id="section2">
+<div class="middle">
+
+
+    <div class="row featurette middle1">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Patient Registration</h2>
+        <p class="lead">Patient Registration
+Patient Registration module is designed to manage vital information for the patient information chart, which marks the outset of demographics capture. It encompasses the patient’s name, address and contact information, birth date, employer, and insurance information.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://media.giphy.com/media/RIw6pFIuEljc94U4u2/giphy.gif"height="500" width="500"/>
+      </div>
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="middle">
+
+    <div class="row featurette middle1">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Manage Appointments</h2>
+        <p class="lead">Integrate Appointment Widgets in Online Hospital Management System. Besides, enable easy scheduling and Manage Appointments for patients.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="https://media.giphy.com/media/QrpVwPDGmJEIvHwKEc/giphy.gif"height="400" width="400"/>
+
+      </div>
+    </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+<div class="middle">
+    <div class="row featurette middle1">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Cost and Time Efficient.</span></h2>
+        <p class="lead"> Obtaining the greatest Health Benefit from Interventions using the available Resources, or achieving a given Health Benefit in a way that minimises Cost and Resource use. A distinction is often made between technical efficiency and allocative efficiency.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="https://media.giphy.com/media/kd9ZwtYY1G8DZdkYDT/giphy.gif"height="500" width="500"/>
+      </div>
+    </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+
+
+  <!-- FOOTER -->
+  <!-- <footer class="container">
+    <div class="foot">
+
+
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </div>
+        <div class="">
+            <ul>
+              <li><img src="instagram.png" alt="instagram" height="20" width="20"></li>
+            </ul>
+        </div>
+
+  </footer> -->
+  <footer class=" foot text-center text-white" style="background-color: #f1f1f1;" id="footer1">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.twitter.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.google.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.instagram.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.linkedin.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.github.com/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
